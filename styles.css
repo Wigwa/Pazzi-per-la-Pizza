@@ -1,28 +1,26 @@
-.card-img-1, .card-img-2, .ca{
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+.card-img-1, .card-img-2, .card-img-3, .card-img-4, .card-img-5, .card-img-6{
+    box-shadow: 0 4px 8px 0 brown;
     transition: 0.3s;
-    width: 50%;
+    width: 80%;
     height: 30vh;
     padding-bottom: 50vh;
+    text-align: center;
+}
 
-  }
-  .card-img-2{ 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 50%;
-    height: 30vh;
-    padding-bottom: 50px;
-  }
+.cards{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    background-color: red;
+}
+   
+.card-img-4, .card-img-5, .card-img-6{
+    margin-top: 20px;
+}
+body{
 
-  
-  .card-img-3{ 
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    width: 50%;
-    height: 30vh;
-    padding-bottom: 50px;
-  }
-  .cards{
-    padding-left: 50px;
-  }
-    
+    color: orange;
+}
+    .pazzi{
+        background-color: black;
+    }
