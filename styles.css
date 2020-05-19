@@ -27,3 +27,35 @@ body{
     h1{
         text-align: center;
     }
+    footer {
+        background-color: rgb(61, 58, 56);
+        color:white;
+        height: 400px;
+        position: relative;
+        margin-top: 50px;
+        
+        }
+        
+        .footer-top {
+          display: flex;
+          height: 300px;
+        }
+        
+        .footer-top h2 {
+           flex: auto;
+           margin-left:30px;
+           text-align:center;
+           margin-top:10px;
+        }
+        
+        .footer-bottom {
+          background-color: rgb(184, 178, 173);
+          color:white;
+          height:50px;
+          text-align:center;
+          position: relative;
+          bottom: 0;
+          left: 0;
+          padding-top: 20px;
+          width: 100%;
+        }
