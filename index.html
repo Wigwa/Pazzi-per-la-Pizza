@@ -28,22 +28,6 @@
                 <div class="card-img-1">
                     <img src="https://cdn.pixabay.com/photo/2016/03/05/09/22/eat-1237431_960_720.jpg" alt=""
                         height="300px" width="465px">
-                    <h2>Toppings</h2>
-                    <form action="/action_page.php">
-                        <label for="pizza toppings">Choose type of pizza topping:</label>
-                        <select id="toppings" name="pizza toppings">
-                            <option value="toppings">Toppings</option>
-                            <option value="Onions">Onions@Ksh100</option>
-                            <option value="mashrooms">Mashrooms@Ksh.120</option>
-                            <option value="sausage">Sausage@Ksh.150</option>
-                            <option value="bacons">Bacons@Ksh.150</option>
-                            <option value="extra cheese">Extra Cheese@Ksh.120</option>
-                            <option value="black olives">Black Olives@Ksh100</option>
-                            <option value="green pepper">Green Pepper@Ksh.120</option>
-                            <option value="pineapple">Pineapple@Ksh.100</option>
-                            <option value="spinach">Spinach@Ksh120</option>
-                        </select>
-                    </form>
                 </div>
             </div><br><br>
 
@@ -51,22 +35,6 @@
                 <div class="card-img-2">
                     <img src="https://cdn.pixabay.com/photo/2014/07/08/12/47/finished-386801__340.jpg" alt=""
                         height="300px" width="465px">
-                    <h2>Types</h2>
-                    <form action="/action_page.php">
-                        <label for="pizza toppings">Choose type pizza :</label>
-                        <select id="types" name="pizza types">
-                            <option value="types">Types</option>
-                            <option value="bianca">Bianca</option>
-                            <option value="Salad">Salad</option>
-                            <option value="bagel">Bagel</option>
-                            <option value="neapolitan">Neopolitan</option>
-                            <option value="pissaladiere">Pissaladiere</option>
-                            <option value="sicilian">Sicilian</option>
-                            <option value="hawailan">Hawailan</option>
-                            <option value="maltese">Maltese</option>
-                            <option value="sushi">Sushi</option>
-                        </select>
-                    </form>
                 </div>
             </div><br><br>
 
@@ -74,17 +42,6 @@
                 <div class="card-img-3">
                     <img src="https://cdn.pixabay.com/photo/2014/07/08/12/46/fast-386798__340.jpg" alt="" height="300px"
                         width="465px">
-                    <h2>Sizes</h2>
-                    <form action="/action_page.php">
-                        <label for="pizza sizes">Choose pizza size:</label>
-                        <select id="types" name="pizza size">
-                            <option value="size">Sizes</option>
-                            <option value="small">Small@Ksh.750</option>
-                            <option value="medium">Medium@Ksh.1000</option>
-                            <option value="large">Large@Ksh.1500</option>
-                            <option value="X-large">X-large@Ksh.2000</option>
-                        </select>
-                    </form>
                 </div>
             </div>
 
@@ -95,57 +52,100 @@
                 <div class="card-img-4">
                     <img src="https://cdn.pixabay.com/photo/2018/04/27/11/49/food-3354447__340.jpg" alt=""
                         height="300px" width="465px">
-                    <h2>Crust</h2>
-                    <form action="/action_page.php">
-                        <label for="pizza sizes">Choose pizza crust:</label>
-                        <select id="types" name="pizza size">
-                            <option value="crust">crust</option>
-                            <option value="stuffed">Stuffed-crust@Ksh.120</option>
-                            <option value="cheese">Cheese-Filled-crust@Ksh.100</option>
-                            <option value="deep">Deep-crust@Ksh.150</option>
-                            <option value="pan">Pan-crust@Ksh.130</option>
-                            <option value="thick">Thick-crust@Ksh.120</option>
-                            <option value="thin">Thin-crust@Ksh100</option>
-                        </select>
-                    </form>
-
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card-img-5">
                     <img src="https://cdn.pixabay.com/photo/2015/11/07/16/25/pizza-1032057__340.jpg" alt=""
                         height="300px" width="465px">
-                    <p>Number</p>
-                    <form action="/action_page.php">
-                        <label for="fname">Write number of Pizza:</label><br>
-                        <input type="number" id="amount" name="number" value="number"><br>
-                    </form>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card-img-6">
                     <img src="https://cdn.pixabay.com/photo/2018/01/05/20/59/pizza-3063880__340.jpg" alt=""
                         height="300px" width="465px">
-                    <p>Total</p>
-                    <form action="/action_page.php">
-                        <label for="fname">Total Amount:</label><br>
-                        <input type="number" id="amount" name="number" value="number"><br><br>
-                    </form>
                 </div>
             </div>
         </div>
     </div>
-    <form>
-        <div class="text">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname"><br>
-        <label for="place">Place:</label><br>
-        <input type="text" id="place" name="place"><br><br>
-      
-        <button type="submit" class="w3-btn w3-margin-bottom">Send your order:</button>
-      </form>
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form">
+                    <div class="form-group">
+                        <label for="size">Size</label><br>
+                        <select name="form-control" id="size" onselect="size();" class="btn btn-info">
+                            <option value="250" id="small" class="btn-info">Small - 750/-</option>
+                            <option value="550" id="medium" class="btn-info">Medium - 1000/-</option>
+                            <option value="850" id="large" class="btn-info">Large - 1500/-</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="crust">Crust:</label><br>
+                        <select name="form-control" id="crust" onselect="crust();" class="btn btn-info">
+                            <option value="200" id="crispy" class="btn-info">Crispy 100</option>
+                            <option value="200" id="stuffed" class="btn-info">Stuffed 120 </option>
+                            <option value="200" id="gluten-free" class="btn-info">Gluten-free 150</option>
+                        </select>
+                    </div><br>
+                    <div class="form-group">
+                        <label for="topping">Topping:</label><br>
+                        <select name="form-control" id="topping" class="btn btn-info">
+                            <option value="150" id="pepperoni" onselect="getPepperoni();" class="btn-info">Pepperoni
+                            </option>
+                            <option value="150" id="mushrooms" onselect="getMushrooms();" class="btn-info">Mushrooms
+                            </option>
+                            <option value="150" id="onions" onselect="getOnions();" class="btn-info">Onions</option>
+                            <option value="150" id="sausage" onselect="getSausage();" class="btn-info">Sausage
+                            </option>
+                            <option value="150" id="bacon" onselect="getBacon();" class="btn-info">Bacon</option>
+                        </select>
+                    </div><br>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="quantity">
+                    <div class="value">
+                    <h4> How many pizza do you want?</h4>
+                    <select class="browser-default custom-select" id="getnumber" onselect="getNumber();">
+                        <option value="1">1 </option>
+                        <option value="2">2 </option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                    </select>
+                </div>
+                <br>
+                <button type="button" id="takeorder" class="btn btn-info" onclick="calculate();">ORDER</button>
+                <div class="Delivery">
+                    <h4>Do you want your pizza delivered??</h4>
+                    <button type="button" id="deliver" class="btn btn-info">YES</button><br><br>
+                    <button type="button" id="no" class="btn btn-info">NO</button><br><br>
+                    <strong>Delivery is ksh.150</strong>
+                </div>
+                <div class="order">
+                    <button type="button" id="deliver" class="btn btn-info" onclick="Total();">CHECKOUT</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <p class="showleft"></p>
+    </div>
+    </div>
+    </div>
+    <h2 id="show"></h2>
+    <br><br>
+
 
     <footer>
         <div class="footer-top">
@@ -175,8 +175,16 @@
         <div class="footer-bottom">
             &copy;Lucy Wigwa | Moonstar Hotel
     </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
     <script src="scripts.js">
     </script>
